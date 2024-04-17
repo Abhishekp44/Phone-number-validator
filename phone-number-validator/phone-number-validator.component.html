@@ -1,0 +1,8 @@
+<div>
+    <label for="phone-number">Phone Number:</label>
+    <input type="text" id="phone-number" [(ngModel)]="phoneNumber" />
+    <button (click)="validatePhoneNumber()">Validate</button>
+  </div>
+  <div *ngIf="isValidPhoneNumber" class="valid">Valid phone number!</div>
+  <div *ngIf="!isValidPhoneNumber" class="invalid">Invalid phone number. Please enter a 10-digit number containing only digits.</div>
+  
